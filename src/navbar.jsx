@@ -20,23 +20,23 @@ const Navbar = () => {
                 {/* Navbar Links (Center) */}
                 <div className="hidden lg:flex lg:items-center lg:w-auto w-full justify-center space-x-6">
                     <NavLink className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`} to="/">
+                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`} to="/">
                         Home
                     </NavLink>
                     <NavLink to="/department" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
+                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
                         Departments
                     </NavLink>
                     <NavLink to="/doctors" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
+                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
                         Doctors
                     </NavLink>
                     <NavLink to="/appointments" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
+                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
                         Appointments
                     </NavLink>
                     <NavLink to="/contact" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
+                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
                         Contact
                     </NavLink>
                 </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <div className="hidden lg:block">
                     <a
                         href="#"
-                        className="px-6 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 shadow-md shadow-slate-400"
+                        className="px-6 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 shadow-md shadow-slate-400 montserrat"
                     >
                         Login
                     </a>
