@@ -74,7 +74,7 @@ const Navbar = () => {
 
             {/* Mobile Menu (when hamburger is clicked) */}
             <div
-                className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden absolute inset-0 bg-white flex flex-col pl-6 pt-2 space-y-6 top-16 h-[20rem] duration-300`}
+                className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden absolute inset-0 bg-white flex flex-col pl-6 pt-2 md:mt-4 space-y-6 top-16 h-[20rem] duration-300`}
             >
                 <NavLink to="/" className={({ isActive }) => `${isActive ?
                         "text-orange-500 text-lg" : "text-gray-800 text-lg"}`}>

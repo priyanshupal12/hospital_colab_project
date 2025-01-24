@@ -5,7 +5,7 @@ import { useState } from 'react';
 import App from './App';
 
 
-function Home() {
+function Home() { 
     // carousel images
     const backgroundImage1 = 'https://cdn.apollohospitals.com/dev-apollohospitals/2024/12/LungLife_banner_Web.jpg';
     const backgroundImage2 = 'https://cdn.apollohospitals.com/dev-apollohospitals/2024/12/Desktop.jpg';
@@ -153,126 +153,126 @@ function Home() {
                     </h5>
                     <div className="container mx-auto my-10">
                         <div className="grid grid-cols-12 gap-4">
-                            <img className='rounded-xl object-cover col-span-full md:col-span-5 h-full sm:col-span-12 md:order-1' src={photo1} alt="" />
-                            <div className="container md:col-span-7 col-span-full grid grid-cols-3 md:grid-cols-5 grid-rows-4 gap-5 md:order-2">
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                            <img className='rounded-xl object-cover col-span-full lg:col-span-5 h-full sm:col-span-12 md:order-1' src={photo1} alt="" />
+                            <div className="container lg:col-span-7 col-span-full grid grid-cols-3 lg:grid-cols-5 grid-rows-4 gap-2 md:order-2">
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
-                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
-                                    <img className='h-10' src={symbole6} alt="" />
+                                <div className="w-full flex items-center justify-center flex-col shadow-lg p-1 sm:p-2 bg-white border border-gray-200 rounded-lg hover:shadow-slate-400 dark:bg-gray-800 dark:border-gray-700 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900">
+                                    <img className='h-7 md:h-10' src={symbole6} alt="" />
                                     <Link to="" className="text-center">
-                                        <h5 className="mb-2 text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
+                                        <h5 className="text-xs md:text-base font-semibold tracking-tight text-gray-900 dark:text-white max-w-36">Need a help in Claim?</h5>
                                     </Link>
                                 </div>
                             </div>
