@@ -6,7 +6,7 @@ import './App.css'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import Appointments from './Appointment';
-
+import Footer from './Footer'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route path='/doctors' element={<Doctors />} />
           <Route path='/contact' element={<Contact />} /> 
         </Routes>
+        <Footer />
       </Router>
 
     </>
