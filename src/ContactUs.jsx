@@ -73,7 +73,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-      <section className='grid grid-cols-2 w-full h-auto place-items-center'>
+      <section className='grid md:grid-cols-2 sm:grid-cols-1 w-full h-auto place-items-center'>
         <div>
           <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets/images/contact-image.jpg" alt="" width="494px" />
         </div>
