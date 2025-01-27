@@ -1,4 +1,6 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook,faTwitter,faInstagram,faLinkedin,faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -205,6 +207,25 @@ const Footer = () => {
 
 
             </footer>
+            <section>
+                <div className="bg-[#007c9d] md:grid md:grid-cols-3 flex flex-col justify-center place-items-center py-1">
+                    <div className="font-semibold">
+                        <small><span>&copy;</span>Copyright 2025. Apollo Hospitals Group. All Rights Reserved.</small>
+                    </div>
+                    <div className="">
+                        <ul className="flex gap-5">
+                            <li><FontAwesomeIcon icon={faFacebook} size="2x" color="#fffff" /></li>
+                            <li><FontAwesomeIcon icon={faInstagram} size="2x" color="#fffff" /></li>
+                            <li><FontAwesomeIcon icon={faTwitter} size="2x" color="#fffff" /></li>
+                            <li><FontAwesomeIcon icon={faLinkedin} size="2x" color="#fffff" /></li>
+                            <li><FontAwesomeIcon icon={faYoutube} size="2x" color="#fffff" /></li>
+                        </ul>
+                    </div>
+                    <div>
+                        Privacy policy | Disclaimer | Contact
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

@@ -4,9 +4,9 @@ import Department from './Department'
 import Doctors from './Doctors'
 import './App.css'
 import Navbar from './Navbar'
-import Contact from './Contact'
 import Appointments from './Appointment';
 import Footer from './Footer'
+import ContactUs from './ContactUs'
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path='/department' element={<Department />} />
           <Route path='/appointments' element={<Appointments />} />
           <Route path='/doctors' element={<Doctors />} />
-          <Route path='/contact' element={<Contact />} /> 
+          <Route path='/contact' element={<ContactUs />} /> 
         </Routes>
         <Footer />
       </Router>

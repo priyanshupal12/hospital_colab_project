@@ -572,10 +572,10 @@ function Home() {
                         <small>“Bringing healthcare of International standards within the reach of every individual.”</small>
                     </div>
                 </div>
-                <div className='grid grid-cols-2 w-full h-auto justify-center place-items-center p-10'>
+                <div className='w-full h-auto md:grid md:grid-cols-2 justify-center place-items-center md:p-10'>
                     <div className='w-full h-auto justify-center place-items-center'>
-                        <div className='w-full h-auto mx-auto grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 justify-center place-items-center'>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center hover:bg-indigo-300 hover:text-white">
+                        <div className='w-full h-auto mx-auto grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 justify-center place-items-center gap-1'>
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_hsptl.svg" alt="icon" />
                                 </div>
@@ -583,7 +583,7 @@ function Home() {
                                     <small>Hospitals</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_speciality.svg" alt="" />
                                 </div>
@@ -591,7 +591,7 @@ function Home() {
                                     <small>Speciality</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white overflow-auto">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_planyourtrip.svg" alt="icon" />
                                 </div>
@@ -599,7 +599,7 @@ function Home() {
                                     <small>Plan Your Trip</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl  dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_testimonials.svg" alt="icon" />
                                 </div>
@@ -607,7 +607,7 @@ function Home() {
                                     <small>Testimonials</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl  dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_faq.svg" alt="icon" />
                                 </div>
@@ -615,7 +615,7 @@ function Home() {
                                     <small>FAQ’s</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl  dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_doctor.svg" alt="icon" />
                                 </div>
@@ -623,7 +623,7 @@ function Home() {
                                     <small>Find A Doctor</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_onlineconsultation.svg" alt="icon" />
                                 </div>
@@ -631,7 +631,7 @@ function Home() {
                                     <small>Online Consultation</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_Apollo Insurance.svg" alt="icon" />
                                 </div>
@@ -639,7 +639,7 @@ function Home() {
                                     <small>Apollo Insurance</small>
                                 </div>
                             </figure>
-                            <figure className="bg-slate-100 rounded-xl shadow-2xl px-1 dark:bg-slate-800 h-[23vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+                            <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                                 <div className='place-items-center pt-3'>
                                     <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_visa.svg" alt="icon" />
                                 </div>
@@ -647,8 +647,9 @@ function Home() {
                                     <small>Visa</small>
                                 </div>
                             </figure>
-                        </div>
-                        <div className='p-5 gap-x-10 border-2 rounded-md bg-white shadow border-green-800 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900 hover:text-white grid grid-cols-2 justify-items-center place-items-end'>
+                        </div> 
+
+                        <div className='max-w-[500px] p-5 gap-x-10 border-2 rounded-md bg-white shadow border-green-800 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900 hover:text-white grid grid-cols-2 justify-items-center place-items-end'>
                             <div className='font-light text-gray-700 hover:text-white'>
                                 <code>International Number</code>
                             </div>
@@ -684,12 +685,13 @@ function Home() {
                 </div>
             </div>
 
-            <div className='bg-violet-500 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900 w-full h-auto  gap-x-5 text-center justify-center m-auto place-items-center'>
+            <div className='bg-violet-500 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900 w-full h-auto text-center justify-center m-auto place-items-center'>
                 <blockquote>
                     <h1 className='text-white font-bold py-3 text-3xl'>What Would You Like To Do Today?</h1>
                 </blockquote>
-                <div className='w-full h-auto gap-x-1 gap-y-1 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 justify-center shadow mx-auto place-items-center px-28'>
-                    <figure className="bg-slate-100 rounded-xl shadow dark:bg-slate-800 md:h-[20vh] w-[150px] justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='w-full h-auto gap-x-1 gap-y-1 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-3 justify-center shadow mx-auto place-items-center px-5 sm:px-10'>
+                    {/* Book Appointment Card */}
+                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
                             <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookappt_icon.svg" alt="icon" width="64" />
                         </div>
@@ -697,39 +699,49 @@ function Home() {
                             <small>Book Appointment</small>
                         </div>
                     </figure>
-                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 md:h-[20vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+
+                    {/* Find Doctor Card */}
+                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
-                            <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/finddoctor_icon.svg" alt="icon" /> 
+                            <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/finddoctor_icon.svg" alt="icon" />
                         </div>
                         <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
                             <small>Find Doctor</small>
                         </div>
                     </figure>
-                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 md:h-[20vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+
+                    {/* Find Hospital Card */}
+                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
                             <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/findhsptl_icon.svg" alt="icon" />
                         </div>
                         <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
                             <small>Find Hospital</small>
-                        </div>  
+                        </div>
                     </figure>
-                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 md:h-[20vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+
+                    {/* Book Health Check-Up Card */}
+                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
                             <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookhelathcheck_icon.svg" alt="icon" />
                         </div>
                         <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
                             <small>Book Health Check-Up</small>
-                        </div> 
+                        </div>
                     </figure>
-                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 md:h-[20vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+
+                    {/* Consult Online Card */}
+                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
                             <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/buymedicines_icon.svg" alt="icon" />
                         </div>
                         <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
                             <small>Consult Online</small>
-                        </div>   
+                        </div>
                     </figure>
-                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 md:h-[20vh] w-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
+
+                    {/* View Health Record Card */}
+                    <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
                             <img src="https://cdn.apollohospitals.com/apollohospitals/View%20Health%20Record.svg" alt="icon" />
                         </div>
@@ -737,10 +749,9 @@ function Home() {
                             <small>View Health Record</small>
                         </div>
                     </figure>
-                    
                 </div>
-                
             </div>
+
         </>
     );
 }
