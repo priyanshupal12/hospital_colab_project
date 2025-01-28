@@ -1,383 +1,903 @@
-import React, { useState } from 'react'
-import Navbar from './Navbar'
-
-
-function Department() {
-
-  const [selectedOption,setselectedOption] = useState('');
-  const handleChange = (e) => {
-    setselectedOption(e.target.value);
-  };
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeartbeat,faBone,faXRay,faBrain,faUserMd,faLungs,faRibbon, faHospital,faAmbulance,faChevronRight} from '@fortawesome/free-solid-svg-icons';
 
 
 
-
+function Department () {
   return (
     <>
-      <section className="relative bg-blue-600 text-white py-24 px-6 sm:px-12 lg:px-24">
-        <div className="absolute inset-0 bg-cover bg-center bg-opacity-50" style={{ backgroundImage: 'url(https://media.istockphoto.com/id/1452231044/photo/male-hand-holding-a-red-heart-on-a-dark-background-early-diagnosis.jpg?s=2048x2048&w=is&k=20&c=PGF503oBPdAiQI5YrgqwCkNYjxX1FuSGl2W-0NYImI4=)' }}></div>
-        <div className="relative container mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
-            Welcome to Your Amazing Website
-          </h1>
-          <p className="text-lg sm:text-xl mb-8">
-            Build the future with us. Let's create something amazing together.
-          </p>
-          <div>
-            <a href="#services" className="px-8 py-3 bg-yellow-500 text-black text-lg font-semibold rounded-md hover:bg-yellow-400 transition-colors duration-300">
-              Get Started
-            </a>
-          </div>
-        </div>
-      </section>
-
       <section>
-        <div className='flex p-10'>
+        <div className='w-full h-auto justify-center flex md:flex-row flex-col my-5'>
+          <div className='flex flex-col gap-y-10 mb-5'>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div className=''>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-14 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faHeartbeat} className="w-8 h-8 text-red-600" />
+                    HEART
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
 
-          <div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
-            </div>
-            <div className='w-full h-auto max-w-2xl'>
-              <label htmlFor="dropdown" className="block text-gray-700 text-lg font-medium mb-2">
-                HEART
-              </label>
-              <select id='dropdown' value={selectedOption} onChange={handleChange} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="option0">Option0</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-                <option value="option4">Option 4</option>
-              </select>
-              <p className="mt-2 text-gray-600">
-                Selected Option: {selectedOption || 'None'}
-              </p>
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-7 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faBone} className="text-yellow-400 w-8 h-8" />
+                  ORTHOPEDICS
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div className=''>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-14 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faXRay} className="text-yellow-300 w-8 h-8" />
+                  SPINE
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faBrain} className="text-blue-500 text-4xl w-8 h-8" />
+                   NEUROLOGY AND NEUROSURGERY
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faUserMd} className="text-blue-500 w-8 h-8" />
+                    GASTROENTEROLOGY
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faLungs} className="text-blue-500 w-8 h-8" />
+                  TRANSPLANT INSTITUTE
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faRibbon} className="text-blue-500 w-8 h-8" />
+                    APOLLO CANCER CENTER
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-16 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faHospital} className="text-blue-500 w-8 h-8" />
+                    ICU
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+            <Menu as="div" className="relative inline-block text-left px-20">
+              <div>
+                <MenuButton className="place-items-center inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300">
+                  <FontAwesomeIcon icon={faAmbulance} className="text-blue-500 w-8 h-8" />
+                    EMERGENCY
+                  <FontAwesomeIcon icon={faChevronRight} className="w-3 h-3 text-blue-500 hover:text-white" />
+                </MenuButton>
+              </div>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Edit
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Duplicate
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Archive
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Move
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Share
+                    </a>
+                  </MenuItem>
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Add to favorites
+                    </a>
+                  </MenuItem>
+                </div>
+                <div className="py-1">
+                  <MenuItem>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
+                    >
+                      Delete
+                    </a>
+                  </MenuItem>
+                </div>
+              </MenuItems>
+            </Menu>
+          </div>
+          <div className='w-full h-auto'>
+            <div className='w-full h-auto mx-auto grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 justify-center place-items-center gap-x-1 gap-y-5'>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
+              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-52 justify-center text-center hover:bg-indigo-300 hover:text-white">
+                <div className='place-items-center pt-3'>
+                  <h5>A Diet to Work with if You have Anorexia</h5>
+                </div>
+                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                  <p>Anorexia nervosa or anorexia is a sever</p>
+                </div>
+                <div>
+                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-14 p-3" />
+                </div>
+              </figure>
             </div>
           </div>
-        
-        
-
-        <div className='w-full h-auto mx-auto grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 justify-center place-items-center gap-1'>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-              <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 max-w-[200px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                <div className='place-items-center pt-3'>
-                   <h5>A Diet to Work with if You have Anorexia</h5>
-                </div>
-                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
-                  <p>Anorexia nervosa or anorexia is a sever</p>
-                </div>
-                <div>
-                  <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2024/10/logo.svg" alt="Apollo Hospitals" className="max-w-10" />
-                </div>
-              </figure>
-        </div>
         </div>
       </section>
     </>
+          
   )
 }
 
 export default Department
+

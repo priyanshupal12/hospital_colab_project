@@ -226,105 +226,105 @@ function Home() {
             </section>
 
             <div className="w-full h-auto bg-sky-100 justify-center place-items-center">
-                <div className="py-5 place-items-center justify-center">
+                <div className="py-5 place-items-center justify-center min-w-80">
                     <div className="text-semibold">
                         <p>The Apollo World of Care</p>
                     </div>
                     <div className="font-bold text-xl">
                         <big>International Patient Care</big>
                     </div>
-                    <div className="font-semibold overflow-auto">
-                        <small>“Bringing healthcare of International standards within the reach of every individual.”</small>
+                    <div className="font-semibold text-center">
+                        <small className='md:text-xl'>“Bringing healthcare of International standards within the reach of every individual.”</small>
                     </div>
                 </div>
-                <div className='w-full h-auto md:grid md:grid-cols-2 justify-center place-items-center md:p-10'>
+                <div className='w-full h-auto md:grid md:grid-cols-2 justify-center place-items-center md:p-10 p-2'>
                     <div className='w-full h-auto justify-center place-items-center'>
-                        <div className='w-full h-auto mx-auto grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 justify-center place-items-center gap-1'>
+                        <div className='w-full h-auto mx-auto grid lg:grid-cols-3 md:grid-cols-3 grid-cols-3 justify-center place-items-center gap-x-1'>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_hsptl.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_hsptl.svg" className='h-16' alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Hospitals</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_speciality.svg" alt="" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_speciality.svg" className='h-16'  alt="" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Speciality</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white overflow-auto">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_planyourtrip.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_planyourtrip.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Plan Your Trip</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl  dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_testimonials.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_testimonials.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Testimonials</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl  dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_faq.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_faq.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>FAQ’s</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl  dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_doctor.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_doctor.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Find A Doctor</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_onlineconsultation.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_onlineconsultation.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Online Consultation</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_Apollo Insurance.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_Apollo Insurance.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Apollo Insurance</small>
                                 </div>
                             </figure>
                             <figure className="bg-slate-100 rounded-xl shadow-2xl dark:bg-slate-800 w-full max-w-[150px] max-h-[150px] justify-center text-center my-5 hover:bg-indigo-300 hover:text-white">
-                                <div className='place-items-center pt-3'>
-                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_visa.svg" alt="icon" />
+                                <div className='place-items-center pt-1'>
+                                    <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v2/images/ips_visa.svg" className='h-16'  alt="icon" />
                                 </div>
-                                <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                                <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pb-2">
                                     <small>Visa</small>
                                 </div>
                             </figure>
                         </div>
 
-                        <div className='max-w-[500px] p-5 gap-x-10 border-2 rounded-md bg-white shadow border-green-800 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900 hover:text-white grid grid-cols-2 justify-items-center place-items-end'>
+                        <div className='max-w-[500px] p-5 gap-x-10 border-2 rounded-md bg-white shadow border-green-800 hover:bg-gradient-to-r from-sky-500 via-sky-700 to-blue-900 hover:text-white md:grid md:grid-cols-2 justify-items-center place-items-end'>
                             <div className='font-light text-gray-700 hover:text-white'>
                                 <code>International Number</code>
                             </div>
                             <div>
-                                <h4><FontAwesomeIcon icon={faPhone} className="text-blue-500 text-xl" /> (+91) 40 4344 1066</h4>
+                                <h4><FontAwesomeIcon icon={faPhone} className="text-blue-500 text-start" />(+91) 40 4344 1066</h4>
                             </div>
                         </div>
                     </div>
                     <div className='place-items-center shadow-2xl border-8 rounded-xl border-white w-auto'>
-                        <img src="https://cdn.apollohospitals.com/apollohospitals/international.png" alt="Apollo Heart Institute Expertise" className='rounded w-auto h-[90vh]' />
+                        <img src="https://cdn.apollohospitals.com/apollohospitals/international.png" alt="Apollo Heart Institute Expertise" className='rounded w-auto' />
                     </div>
                 </div>
             </div>
@@ -354,13 +354,13 @@ function Home() {
                 <blockquote>
                     <h1 className='text-white font-bold py-3 text-3xl'>What Would You Like To Do Today?</h1>
                 </blockquote>
-                <div className='w-full h-auto gap-x-1 gap-y-1 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-3 justify-center shadow mx-auto place-items-center px-5 sm:px-10'>
+                <div className='w-full h-auto gap-x-3 gap-y-3 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-3 justify-center shadow mx-auto place-items-center px-5 sm:px-10'>
                     {/* Book Appointment Card */}
                     <figure className="bg-slate-100 rounded-xl shadow px-1 dark:bg-slate-800 w-full max-w-[150px] h-[21vh] justify-center text-center hover:bg-indigo-300 hover:text-white">
                         <div className='place-items-center pt-3'>
-                            <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookappt_icon.svg" alt="icon" width="64" />
+                            <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookappt_icon.svg" alt="icon" width='64' className='' />
                         </div>
-                        <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-3">
+                        <div className="text-sky-500 dark:text-sky-400 hover:text-white font-medium pt-1 leading-4">
                             <small>Book Appointment</small>
                         </div>
                     </figure>
@@ -390,7 +390,7 @@ function Home() {
                         <div className='place-items-center pt-3'>
                             <img src="https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookhelathcheck_icon.svg" alt="icon" />
                         </div>
-                        <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                        <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-1 font-medium leading-4">
                             <small>Book Health Check-Up</small>
                         </div>
                     </figure>
@@ -410,7 +410,7 @@ function Home() {
                         <div className='place-items-center pt-3'>
                             <img src="https://cdn.apollohospitals.com/apollohospitals/View%20Health%20Record.svg" alt="icon" />
                         </div>
-                        <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-3 font-medium">
+                        <div className="text-sky-500 dark:text-sky-400 hover:text-white pt-1 leading-4 font-medium">
                             <small>View Health Record</small>
                         </div>
                     </figure>
