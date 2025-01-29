@@ -5,7 +5,7 @@ import Doctors from './Doctors'
 import './App.css'
 import Navbar from './Navbar'
 import Contact from './Contact'
-import Appointments from './Appointment';
+import Appointments from './Appointments';
 
 
 

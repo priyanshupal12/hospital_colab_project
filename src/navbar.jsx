@@ -20,23 +20,23 @@ const Navbar = () => {
                 {/* Navbar Links (Center) */}
                 <div className="hidden lg:flex lg:items-center lg:w-auto w-full justify-center space-x-6">
                     <NavLink className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`} to="/">
+                        "text-sky-500 text-base montserrat" : "text-gray-800 text-base hover:text-sky-500 montserrat"}`} to="/">
                         Home
                     </NavLink>
                     <NavLink to="/department" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
+                        "text-sky-500 text-base montserrat" : "text-gray-800 text-base hover:text-sky-500 montserrat"}`}>
                         Departments
                     </NavLink>
                     <NavLink to="/doctors" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
+                        "text-sky-500 text-base montserrat" : "text-gray-800 text-base hover:text-sky-500 montserrat"}`}>
                         Doctors
                     </NavLink>
                     <NavLink to="/appointments" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
+                        "text-sky-500 text-base montserrat" : "text-gray-800 text-base hover:text-sky-500 montserrat"}`}>
                         Appointments
                     </NavLink>
                     <NavLink to="/contact" className={({ isActive }) => `${isActive ?
-                        "text-sky-500 text-lg montserrat" : "text-gray-800 text-lg hover:text-sky-500 montserrat"}`}>
+                        "text-sky-500 text-base montserrat" : "text-gray-800 text-base hover:text-sky-500 montserrat"}`}>
                         Contact
                     </NavLink>
                 </div>
@@ -48,6 +48,12 @@ const Navbar = () => {
                         className="px-6 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 shadow-md shadow-slate-400 montserrat"
                     >
                         Login
+                    </a>
+                    <a
+                        href="#"
+                        className="px-6 mx-2 py-2 bg-transparent text-sky rounded-lg hover:text-sky-600 shadow-md shadow-slate-400 montserrat"
+                    >
+                        sign up
                     </a>
                 </div>
 
@@ -74,29 +80,29 @@ const Navbar = () => {
 
             {/* Mobile Menu (when hamburger is clicked) */}
             <div
-                className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden absolute inset-0 bg-white flex flex-col pl-6 pt-2 md:mt-4 space-y-6 top-16 h-[20rem] duration-300`}
+                className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden absolute inset-0 bg-white flex flex-col pl-6 pt-2 md:mt-5 space-y-6 top-16 h-[20rem] duration-300`}
             >
                 <NavLink to="/" className={({ isActive }) => `${isActive ?
-                        "text-orange-500 text-lg" : "text-gray-800 text-lg"}`}>
+                        "text-sky-500 text-lg" : "text-gray-800 text-lg"}`}>
                     Home
                 </NavLink>
                 <NavLink to="/department" className={({ isActive }) => `${isActive ?
-                        "text-orange-500 text-lg" : "text-gray-800 text-lg hover:text-red-500"}`}>
+                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
                     Departments
                 </NavLink>
                 <NavLink to="/doctors" className={({ isActive }) => `${isActive ?
-                        "text-orange-500 text-lg" : "text-gray-800 text-lg hover:text-red-500"}`}>
+                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
                     Doctors
                 </NavLink>
                 <NavLink to="/appointments" className={({ isActive }) => `${isActive ?
-                        "text-orange-500 text-lg" : "text-gray-800 text-lg hover:text-red-500"}`}>
+                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
                     Appointments
                 </NavLink>
                 <NavLink to="/contact" className={({ isActive }) => `${isActive ?
-                        "text-orange-500 text-lg" : "text-gray-800 text-lg hover:text-red-500"}`}>
+                        "text-sky-500 text-lg" : "text-gray-800 text-lg hover:text-sky-500"}`}>
                     Contact
                 </NavLink>
-                <Link to="" className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 max-w-20 text-center">
+                <Link to="" className="px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 max-w-20 text-center">
                     Login
                 </Link>
             </div>
