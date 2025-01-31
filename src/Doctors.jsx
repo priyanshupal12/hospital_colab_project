@@ -73,12 +73,12 @@ function Doctors() {
             value={filters.specialty}
             onChange={(value) => handleFilterChange('specialty', value)}
           />
-          <SelectFilter
+          {/* <SelectFilter
             label="Gender"
             options={GENDERS}
             value={filters.gender}
             onChange={(value) => handleFilterChange('gender', value)}
-          />
+          /> */}
         </div>
 
         {/* Doctors List */}
