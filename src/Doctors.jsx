@@ -41,7 +41,7 @@ function Doctors() {
 
   const filteredDoctors = useMemo(() => {
     return doctors.filter(doctor => (
-      (!filters.city || doctor.city === filters.location) &&
+      (!filters.city || doctor.location === filters.city) &&
       (!filters.specialty || doctor.specialty === filters.specialty) &&
       (!filters.gender || doctor.gender === filters.gender)
     ));
@@ -73,12 +73,12 @@ function Doctors() {
             value={filters.specialty}
             onChange={(value) => handleFilterChange('specialty', value)}
           />
-          {/* <SelectFilter
+          <SelectFilter
             label="Gender"
             options={GENDERS}
             value={filters.gender}
             onChange={(value) => handleFilterChange('gender', value)}
-          /> */}
+          />
         </div>
 
         {/* Doctors List */}
