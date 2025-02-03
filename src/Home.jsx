@@ -8,8 +8,8 @@ function Home() {
   // carousel images
   const backgroundImage1 =
     "https://cdn.apollohospitals.com/dev-apollohospitals/2024/12/LungLife_banner_Web.jpg";
-    
-  
+
+
   //symboles images for cards
   const symbole1 =
     "https://www.apollohospitals.com/wp-content/themes/apollohospitals/assets-v3/images/bookappt_icon.svg";
@@ -125,8 +125,8 @@ function Home() {
             <button
               onClick={handleSpecialtiesClick}
               className={`${specialties
-                  ? "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 border-b-blue-800 font-medium py-2 px-3 rounded-t-lg"
-                  : "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 font-medium py-2 px-3 rounded-t-lg"
+                ? "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 border-b-blue-800 font-medium py-2 px-3 rounded-t-lg"
+                : "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 font-medium py-2 px-3 rounded-t-lg"
                 }`}
             >
               Specialties
@@ -136,8 +136,8 @@ function Home() {
             <button
               onClick={handleProceduresClick}
               className={`${procedures
-                  ? "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 border-b-blue-800 font-medium py-2 px-3 rounded-t-lg"
-                  : "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 font-medium py-2 px-3 rounded-t-lg"
+                ? "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 border-b-blue-800 font-medium py-2 px-3 rounded-t-lg"
+                : "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 font-medium py-2 px-3 rounded-t-lg"
                 }`}
             >
               Procedure
@@ -147,8 +147,8 @@ function Home() {
             <button
               onClick={handleProHealthClick}
               className={`${proHealth
-                  ? "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 border-b-blue-800 font-medium py-2 px-3 rounded-t-lg"
-                  : "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 font-medium py-2 px-3 rounded-t-lg"
+                ? "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 border-b-blue-800 font-medium py-2 px-3 rounded-t-lg"
+                : "bg-transparent hover:border-blue-800 text-blue-500 border-sky-200 border-2 border-b-4 font-medium py-2 px-3 rounded-t-lg"
                 }`}
             >
               ProHealth

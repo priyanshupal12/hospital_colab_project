@@ -14,6 +14,7 @@ function App() {
 
   return (
     <>
+
       <Router>  
         <Navbar />      
         <Routes>
@@ -21,9 +22,9 @@ function App() {
           <Route path='/department' element={<Department />} />
           <Route path='/appointments' element={<Appointments />} />
 
-          <Route path='/doctors' element={<Doctors />}>            
+          <Route path='/doctors'>            
             <Route index element={<Doctors />}/>
-            <Route path=":id" element={<DoctorDetail />}/>
+            <Route path="/doctors/:id" element={<DoctorDetail />}/> 
           </Route>
 
           <Route path='/contact' element={<ContactUs />} /> 

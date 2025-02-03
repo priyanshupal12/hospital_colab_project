@@ -32,8 +32,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section1")}
                   className={` ${activeTab === "section1"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 justify-evenly md:justify-end md:gap-x-[93px] gap-x-14 px-5 py-1 rounded-md bg-white text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -47,56 +47,14 @@ function Department() {
                   />
                 </MenuButton>
               </div>
-
-              {/* <MenuItems
-                transition
-                className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
-              >
-                <div className="py-1">
-                  <MenuItem>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Healthy Heart Program
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Treatments
-                    </a>
-                  </MenuItem>
-                </div>
-                <div className="py-1">
-                  <MenuItem>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Facilities
-                    </a>
-                  </MenuItem>
-                  <MenuItem>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:text-gray-900 data-focus:outline-hidden"
-                    >
-                      Clinical Team
-                    </a>
-                  </MenuItem>
-                </div>
-              </MenuItems> */}
             </Menu>
             <Menu as="div" className="relative inline-block text-left px-12 max-w-sm">
               <div>
                 <MenuButton
                   onClick={() => handleToggle("section2")}
                   className={`${activeTab === "section2"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 justify-evenly md:justify-end px-5 py-1 md:gap-x-[68px] gap-x-8 rounded-md bg-white text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -158,8 +116,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section3")}
                   className={` ${activeTab === "section3"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 justify-evenly md:justify-end px-5 py-1 md:gap-x-24 gap-x-16 rounded-md bg-white text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -221,8 +179,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section4")}
                   className={` ${activeTab === "section4"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 md:justify-end justify-evenly px-5 py-1 md:gap-x-16 gap-x-7 rounded-md bg-white text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -284,8 +242,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section5")}
                   className={` ${activeTab === "section5"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 md:justify-end justify-evenly px-5 py-1 md:gap-x-12 gap-x-5 rounded-md bg-white text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -347,8 +305,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section6")}
                   className={` ${activeTab === "section6"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } md:text-nowrap place-items-center inline-flex w-full md:min-w-80 md:justify-end justify-evenly gap-x-3 text-nowrap md:gap-x-[40px] rounded-md bg-white px-5 py-1 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -410,8 +368,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section7")}
                   className={` ${activeTab === "section7"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 justify-evenly md:justify-end md:gap-x-16 gap-x-10 rounded-md bg-white px-5 py-1 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -473,8 +431,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section8")}
                   className={` ${activeTab === "section8"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 md:justify-end justify-evenly gap-x-[74px] md:gap-x-[110px] rounded-md bg-white px-5 py-1 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -536,8 +494,8 @@ function Department() {
                 <MenuButton
                   onClick={() => handleToggle("section9")}
                   className={` ${activeTab === "section9"
-                      ? "bg-green-500"
-                      : "bg-gray-300 hover:bg-gray-400"
+                    ? "bg-green-500"
+                    : "bg-gray-300 hover:bg-gray-400"
                     } place-items-center inline-flex w-full md:min-w-80 justify-evenly  md:justify-end gap-x-10 md:gap-x-[83px] rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 shadow-xs ring-gray-300 ring-inset hover:bg-blue-300`}
                 >
                   <FontAwesomeIcon
@@ -552,7 +510,7 @@ function Department() {
                 </MenuButton>
               </div>
 
-              
+
             </Menu>
           </div>
 

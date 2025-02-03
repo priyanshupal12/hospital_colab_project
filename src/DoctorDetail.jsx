@@ -1,24 +1,39 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
-function DoctorDetail(){
-    const {id} = useParams();
+function DoctorDetail() {
+    const { id } = useParams();
+    const navigate = useNavigate();
     const [doctor, setDoctor] = useState(null);
+    const [step, setStep] = useState(1); // Add step state
+    const [bookingStatus, setBookingStatus] = useState('idle'); // Add booking status state
 
     useEffect(() => {
-        fetch(`https://6798c2efbe2191d708b0c161.mockapi.io/hospital/users${id}`)
-        .then((res) => res.json())
-        .then((data) => setDoctor(data))
-        .catch((error) => console.error('Error fetching doctor:', error));
-        },[id]);
-        
-        if(!doctor) {
-            return <div>Loading doctor details...</div>; 
-        }
+        // Fixed URL (added missing slash before ${id})
+        fetch(`https://6798c2efbe2191d708b0c161.mockapi.io/hospital/users/${id}`)
+            .then((res) => res.json())
+            .then((data) => setDoctor(data))
+            .catch((error) => console.error('Error fetching doctor:', error));
+    }, [id]);
 
-        console.log(data)
+    const handleBookAppointment = () => {
+        setBookingStatus('pending');
+        // Simulate API call
+        setTimeout(() => {
+            setStep(2);
+            setBookingStatus('confirmed');
+        }, 2000);
+    };
 
+    const handleCancelBooking = () => {
+        // Navigate back to doctors list
+        navigate('/doctors');
+    };
+
+    if (!doctor) {
+        return <div>Loading doctor details...</div>;
+    }
 
     return (
         <>
@@ -31,11 +46,11 @@ function DoctorDetail(){
                         <div className="md:border-r border-gray-200 pr-6">
                             <div className="flex flex-col items-center mb-6">
                                 <img
-                                    src={doctor.img}
-                                    alt={doctor.title}
+                                    src={doctor.image}
+                                    alt={doctor.name}
                                     className="w-32 h-32 rounded-full object-cover mb-4"
                                 />
-                                <h3 className="text-lg font-semibold text-center">{doctor.title}</h3>
+                                <h3 className="text-lg font-semibold text-center">{doctor.name}</h3>
                                 <span className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mt-2">
                                     {doctor.exp}
                                 </span>
@@ -48,11 +63,11 @@ function DoctorDetail(){
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-gray-700">Languages</p>
-                                    <p className="text-sm text-gray-600">{doctor.lang}</p>
+                                    <p className="text-sm text-gray-600">{doctor.language}</p>
                                 </div>
                                 <div>
-                                    <p className="text-sm font-medium text-gray-700">Availability</p>
-                                    <p className="text-sm text-gray-600">{doctor.timing}</p>
+                                    <p className="text-sm font-medium text-gray-700">spaciality</p>
+                                    <p className="text-sm text-gray-600">{doctor.specialty}</p>
                                 </div>
                             </div>
                         </div>
